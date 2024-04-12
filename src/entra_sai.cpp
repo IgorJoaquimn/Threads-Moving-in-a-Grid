@@ -17,8 +17,11 @@ void entra(cell &c)
 
 void sai(cell &c)
 {
+    pthread_mutex_lock(&grid_mutexes[c.x][c.y]);
     grid_occupied[c.x][c.y] = false;
     pthread_cond_signal(&grid_conds[c.x][c.y]);
+    pthread_mutex_unlock(&grid_mutexes[c.x][c.y]);
+
 }
 
 
