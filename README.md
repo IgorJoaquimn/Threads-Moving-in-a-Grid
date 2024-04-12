@@ -2,8 +2,6 @@
 
 Author: Igor Joaquim da Silva Costa
 
----
-
 ## Introduction
 
 This project aims to simulate multiple threads moving in a grid, where each thread follows a predefined path while accessing grid positions in a synchronized manner.
@@ -19,16 +17,12 @@ Each thread, after creation and obtaining its identification and path data, exec
         - Releases the previous position (Note: it only exits a position when it can enter the next one).
         - Executes the passa_tempo function with the time associated with position P'.
 
----
-
 ## Usage
 
 To use this project, follow these steps:
 
 1. Compile the source files using a C++ compiler.
 2. Run the executable with appropriate input.
-
----
 
 ## Example
 
@@ -79,7 +73,6 @@ Gives the result
 270 ) 12 @( 3, 2) z 180
 320 ) 13 @( 2, 0) z 120
 ```
----
 
 ## Compilation Instructions
 
@@ -100,7 +93,6 @@ or
     make build
 ```
 
----
 
 ## Notes
 
