@@ -8,14 +8,16 @@
 
 void init_mutex(int N);
 void passa_tempo(int tid, int x, int y, int decimos);
-void entra(int x, int y);
-void sai(int x, int y);
+
 
 
 class cell {
     public:
     int x,y,time;
 };
+
+void entra(cell &c);
+void sai(cell &c);
 
 
 class thread_t {
