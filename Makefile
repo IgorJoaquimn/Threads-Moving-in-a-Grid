@@ -42,9 +42,6 @@ $(OBJ_FOLDER)%.o: $(SRC_FOLDER)%.cpp
 build: $(OBJ)
 	$(CC) $(CXXFLAGS) -o $(BIN_FOLDER)$(TARGET) $(OBJ)
 
-exec: build 
-	$(BIN_FOLDER)$(TARGET) -c files/russian.txt saida.z78
-
 clean:
 	@rm -rf $(OBJ_FOLDER)* $(BIN_FOLDER)*
 

@@ -76,18 +76,8 @@ Gives the result
 
 ## Compilation Instructions
 
-The project consists of the following source files:
-
-- `Thread.h`: Header file containing class and function declarations.
-- `main.cpp`: Main program file containing the entry point and thread initialization.
-- `Thread.cpp`: Source file containing the implementation of thread-related functions.
 
 To compile the project, execute the following commands in the terminal:
-```
-    g++ -std=c++17 -pthread main.cpp Thread.cpp -o main
-```
-
-or
 
 ```
     make build
