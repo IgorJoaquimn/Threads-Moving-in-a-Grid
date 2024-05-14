@@ -31,7 +31,7 @@ int main()
         {
             int x, y, time;
             cin >> x >> y >> time;
-            cell new_cell = {x, y, time};
+            cell new_cell = {x, y, time, gid};
             new_thread.path.push(new_cell);
         }
 

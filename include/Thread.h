@@ -13,11 +13,11 @@ void passa_tempo(int tid, int x, int y, int decimos);
 
 class cell {
     public:
-    int x,y,time;
+    int x,y,time,t;
 };
 
-void entra(cell &c,int t);
-void sai(cell &c,int t);
+void entra(cell &c);
+void sai(cell &c);
 
 
 class thread_t {
