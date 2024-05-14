@@ -2,6 +2,7 @@
 #define THREAD
 
 #include <queue>
+#include <set>
 #include <pthread.h>
 #include <cstdio>
 

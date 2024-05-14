@@ -1,5 +1,4 @@
 #include "Thread.h"
-#include <set>
 
 const int N_init = 20;
 
