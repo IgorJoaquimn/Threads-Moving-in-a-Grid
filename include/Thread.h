@@ -16,8 +16,8 @@ class cell {
     int x,y,time;
 };
 
-void entra(cell &c);
-void sai(cell &c);
+void entra(cell &c,int t);
+void sai(cell &c,int t);
 
 
 class thread_t {

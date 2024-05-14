@@ -9,10 +9,10 @@ void thread_t::run()
         path.pop();
 
         // Enter the next position
-        entra(next_position);
+        entra(next_position,gid);
         // Execute passa_tempo for the next position
         passa_tempo(id, next_position.x, next_position.y, next_position.time);
         // Release the previous position
-        sai(next_position);
+        sai(next_position,gid);
     }
 }

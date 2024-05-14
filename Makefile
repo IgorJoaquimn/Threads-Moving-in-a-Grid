@@ -46,4 +46,4 @@ clean:
 	@rm -rf $(OBJ_FOLDER)* $(BIN_FOLDER)*
 
 test: clean build 
-	$(BIN_FOLDER)$(TARGET) < tests/case1.txt
+	$(BIN_FOLDER)$(TARGET) < tests/case2.txt
