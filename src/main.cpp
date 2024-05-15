@@ -19,7 +19,6 @@ int main()
     init_mutex(N);
 
     vector<thread_t> threads;
-
     for (int i = 0; i < n_threads; ++i)
     {
         int id, gid, n_pos;
@@ -37,10 +36,7 @@ int main()
 
         threads.push_back(new_thread);
     }
-
-
     vector<pthread_t> thread_handles;
-
     // Create pthreads
     for (auto& thread : threads)
     {
@@ -48,7 +44,6 @@ int main()
         pthread_create(&thread_id, NULL, thread_run, &thread);
         thread_handles.push_back(thread_id);
     }
-
     // Join pthreads
     for (auto& thread_id : thread_handles)
         pthread_join(thread_id, NULL);

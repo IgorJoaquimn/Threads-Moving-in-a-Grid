@@ -16,6 +16,16 @@ Each thread, after creation and obtaining its identification and path data, exec
         - Enters the next position.
         - Releases the previous position (Note: it only exits a position when it can enter the next one).
         - Executes the passa_tempo function with the time associated with position P'.
+  
+## How the syncronization works
+### Path Traversal
+The thread_t::run function represents the main loop of a thread, where it traverses a predefined path through the grid. Synchronization mechanisms ensure that threads can safely navigate the grid without conflicts, coordinating their movements to prevent collisions and ensure efficient execution.
+
+By employing mutexes, condition variables, and occupancy tracking, the synchronization mechanisms in this project enable effective coordination and safe concurrent access within the grid-based environment.
+
+### Thread Operations and Grid Interaction
+Threads executing within the system adhere to a strict protocol when interacting with the grid. Before entering a cell, a thread acquires the mutex associated with that cell, ensuring exclusive access. It then checks the cell's occupancy status and waits, if necessary, by utilizing the corresponding condition variable. Once the cell becomes available, the thread proceeds with its operation, marking the cell as occupied. Upon completing its task within the cell, the thread releases the mutex, signaling its departure.
+
 
 ## Usage
 
