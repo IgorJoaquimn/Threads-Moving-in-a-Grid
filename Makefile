@@ -27,8 +27,6 @@ INCLUDE_FOLDER = ./include/
 BIN_FOLDER = ./bin/
 OBJ_FOLDER = ./obj/
 SRC_FOLDER = ./src/
-INPUT = ../input
-OUTPUT = ../output
 
 # All sources, objects, and header files
 MAIN = Main

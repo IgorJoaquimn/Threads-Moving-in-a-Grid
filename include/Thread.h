@@ -28,9 +28,6 @@ public:
     int n_pos;
     std::queue<cell> path;
     thread_t(int id, int gid, int n_pos) : id(id), gid(gid), n_pos(n_pos)  {}
-
     void run();
-
 };
-
 #endif /* THREAD */

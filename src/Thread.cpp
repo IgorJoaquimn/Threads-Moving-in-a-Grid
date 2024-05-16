@@ -1,18 +1,19 @@
 #include "Thread.h"
 
 void thread_t::run()
+// Função que implementa o caminho no grid
 {
     while (!path.empty())
     {
-        // Get the next position
+        // Vá para a proxima posição
         cell next_position = path.front();
         path.pop();
 
-        // Enter the next position
+        // Entre (se possível)
         entra(next_position);
-        // Execute passa_tempo for the next position
+        // Execute passa_tempo
         passa_tempo(id, next_position.x, next_position.y, next_position.time);
-        // Release the previous position
+        // Saia da posição atual
         sai(next_position);
     }
 }

@@ -27,12 +27,12 @@ By employing mutexes, condition variables, and occupancy tracking, the synchroni
 Threads executing within the system adhere to a strict protocol when interacting with the grid. Before entering a cell, a thread acquires the mutex associated with that cell, ensuring exclusive access. It then checks the cell's occupancy status and waits, if necessary, by utilizing the corresponding condition variable. Once the cell becomes available, the thread proceeds with its operation, marking the cell as occupied. Upon completing its task within the cell, the thread releases the mutex, signaling its departure.
 
 
-## Usage
+## Utilização
 
-To use this project, follow these steps:
+Para utilizar este projeto, siga estes passos:
 
-1. Compile the source files using a C++ compiler.
-2. Run the executable with appropriate input.
+1. Compilar os ficheiros de origem utilizando um compilador C++.
+2. Execute o executável com a entrada apropriada.
 
 ## Example
 
